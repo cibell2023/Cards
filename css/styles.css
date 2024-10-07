@@ -1,0 +1,174 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #a8c9fa;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+
+    width: 100px;
+    height: 110px;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+}
+
+footer {
+    background-color: #a8c9fa;
+    color: #05478d;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/*button*/
+button a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+button a:hover{
+    color: white;
+}
+
+button[type="submit"]{
+    background-color: #65c4e7;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5 auto;
+    display: block;
+    
+
+ }
+
+/* Formatação do menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    padding: 5px 10px;
+    background-color: #598bc0;
+    color: white;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 1.25em;
+    }
+
+    .card p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 15px;
+
+    }
+
+    .card h2 {
+        font-size: 1.1em;
+    }
+
+    .card p {
+        font-size: 0.8em;
+    }
+}
+
+/* Tablets*/
+
+@media screen and (max-width: 1024px) {
+    section, aside{
+     width: 100%;
+     padding: 0 auto;
+    }
+ }
+
+ /* Celular*/
+
+ @media screen and (max-width: 1360px) {
+   nav li {
+     float: none;
+     text-align: center;
+     width: 100%;
+   }
+ }
